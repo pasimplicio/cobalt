@@ -33,9 +33,10 @@ export default async function(obj) {
     if (!postId) return { error: "fetch.short_link" };
 
     // should always be /video/, even for photos
+    // full chrome user agent gets served a waf challenge page instead of the post
     const res = await fetch(`https://www.tiktok.com/@i/video/${postId}`, {
         headers: {
-            "user-agent": genericUserAgent,
+            "user-agent": genericUserAgent.split(' Chrome/1')[0],
             cookie,
         }
     })
