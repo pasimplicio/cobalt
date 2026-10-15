@@ -28,10 +28,6 @@
         gap: var(--padding);
     }
 
-    .queue-stub :global(.meowbalt) {
-        height: 120px;
-    }
-
     .stub-text {
         padding: 0;
     }

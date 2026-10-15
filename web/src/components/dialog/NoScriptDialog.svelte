@@ -10,12 +10,12 @@
                 id="nojs-dialog"
                 meowbalt="error"
                 bodyText={
-                    "cobalt uses javascript for api requests and ui interactions, but it's not available in your browser. "
-                    + "you can still navigate around cobalt, but most functionality won't work."
+                    "Este site usa JavaScript para os downloads e para a interface, mas ele está desativado no seu navegador. "
+                    + "Você ainda pode navegar pelas páginas, mas a maioria das funções não vai funcionar."
                 }
                 buttons={[
                     {
-                        text: "got it",
+                        text: "Entendi",
                         main: true,
                         action: () => {},
                         link: "#nojs-ack"

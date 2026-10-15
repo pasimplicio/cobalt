@@ -1,0 +1,11 @@
+{
+    "import.no_data": "Este arquivo não tem nenhum ajuste para carregar. Tem certeza de que é o arquivo certo?",
+    "import.invalid": "Este arquivo não contém ajustes válidos para importar. Tem certeza de que é o arquivo certo?",
+    "import.unknown": "Não foi possível ler o arquivo. Ele pode estar corrompido ou em um formato errado. Este foi o erro:\n\n{{ value }}",
+
+    "tunnel.probe": "Não foi possível testar este túnel. Seu navegador ou sua rede pode estar bloqueando o acesso a um dos servidores. Verifique se alguma extensão do navegador está interferindo.",
+
+    "captcha_too_long": "A verificação anti-robô do Cloudflare Turnstile está demorando demais. Tente de novo. Se continuar demorando, desative extensões estranhas do navegador, troque de rede, use outro navegador ou verifique o aparelho contra malware.",
+
+    "pipeline.missing_response_data": "O servidor de processamento não enviou as informações necessárias do arquivo, então não consegui montar o processamento local. Tente de novo em alguns segundos e avise se o problema continuar."
+}

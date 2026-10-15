@@ -7,27 +7,33 @@
 
     import type { CobaltDownloadButtonState } from "$lib/types/omnibox";
 
+    import IconCheck from "@tabler/icons-svelte/IconCheck.svelte";
+    import IconLoader2 from "@tabler/icons-svelte/IconLoader2.svelte";
+    import IconArrowRight from "@tabler/icons-svelte/IconArrowRight.svelte";
+    import IconExclamationMark from "@tabler/icons-svelte/IconExclamationMark.svelte";
+
     export let url: string;
     export let disabled = false;
     export let loading = false;
 
-    $: buttonText = ">>";
+    type DownloadButtonState = "idle" | "think" | "check" | "done" | "error";
+
+    let buttonState: DownloadButtonState = "idle";
     $: buttonAltText = $t("a11y.save.download");
 
-    type DownloadButtonState = "idle" | "think" | "check" | "done" | "error";
+    const icons = {
+        idle: IconArrowRight,
+        think: IconLoader2,
+        check: IconLoader2,
+        done: IconCheck,
+        error: IconExclamationMark,
+    };
 
     const unsubscribe = downloadButtonState.subscribe(
         (state: CobaltDownloadButtonState) => {
             disabled = state !== "idle";
             loading = state === "think" || state === "check";
-
-            buttonText = {
-                idle: ">>",
-                think: "...",
-                check: "..?",
-                done: ">>>",
-                error: "!!",
-            }[state];
+            buttonState = state;
 
             buttonAltText = $t(
                 {
@@ -53,6 +59,7 @@
 
 <button
     id="download-button"
+    class="state-{buttonState}"
     {disabled}
     on:click={() => {
         hapticSwitch();
@@ -60,7 +67,7 @@
     }}
     aria-label={buttonAltText}
 >
-    <span id="download-state">{buttonText}</span>
+    <svelte:component this={icons[buttonState]} />
 </button>
 
 <style>
@@ -68,71 +75,68 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-shrink: 0;
 
-        height: 100%;
-        min-width: 48px;
-        width: 48px;
+        height: 36px;
+        width: 40px;
+        padding: 0;
 
-        border-radius: 0;
+        border-radius: calc(var(--border-radius) - 4px);
+        background: var(--accent);
+        color: var(--on-accent);
+        box-shadow: 0 4px 12px -6px var(--accent-glow);
 
-        /* visually align the button, +1.5px because of inset box-shadow on parent */
-        padding: 0 13.5px 0 12px;
-
-        background: none;
-        box-shadow: none;
-        transform: none;
-
-        border-left: 1.5px var(--input-border) solid;
-        border-top-right-radius: var(--border-radius);
-        border-bottom-right-radius: var(--border-radius);
+        transition:
+            background-color 0.15s,
+            transform 0.15s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    #download-button:dir(rtl) {
-        border-left: 0;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-
-        border-right: 1.5px var(--input-border) solid;
-        border-top-left-radius: var(--border-radius);
-        border-bottom-left-radius: var(--border-radius);
-
-        direction: ltr;
-        padding: 0 12px 0 15px;
+    #download-button :global(svg) {
+        width: 20px;
+        height: 20px;
+        stroke-width: 2.2px;
     }
 
-    #download-state {
-        font-size: 24px;
-        font-family: "Noto Sans Mono", "IBM Plex Mono", monospace;
-        font-weight: 400;
+    #download-button:dir(rtl) :global(svg) {
+        transform: scale(-1, 1);
+    }
 
-        text-align: center;
-        text-indent: -5px;
-        letter-spacing: -5.3px;
+    .state-think :global(svg),
+    .state-check :global(svg) {
+        animation: spinner 0.7s infinite linear;
+    }
 
-        margin-bottom: 2px;
+    #download-button.state-error {
+        background: var(--red);
+    }
+
+    #download-button.state-done {
+        background: var(--green);
     }
 
     #download-button:disabled {
         cursor: unset;
-        color: var(--gray);
     }
 
-    :global(#input-container.focused) #download-button {
-        border-left: 2px var(--secondary) solid;
-    }
-
-    :global(#input-container.focused) #download-button:dir(rtl) {
-        border-left: 0;
-        border-right: 2px var(--secondary) solid;
+    #download-button:focus-visible {
+        outline: 2px solid var(--secondary);
+        outline-offset: 2px;
     }
 
     @media (hover: hover) {
         #download-button:hover:not(:disabled) {
-            background: var(--button-hover-transparent);
+            background: var(--accent-hover);
         }
     }
 
     #download-button:active:not(:disabled) {
-        background: var(--button-press-transparent);
+        background: var(--accent-press);
+        transform: scale(0.95);
+    }
+
+    :global([data-reduce-motion="true"]) #download-button,
+    :global([data-reduce-motion="true"]) #download-button:active {
+        transition: none;
+        transform: none;
     }
 </style>

@@ -1,7 +1,6 @@
 <script lang="ts">
     import settings from "$lib/state/settings";
 
-    import { version } from "$lib/version";
     import { t } from "$lib/i18n/translations";
 
     import PageNav from "$components/subnav/PageNav.svelte";
@@ -23,14 +22,10 @@
     import IconBug from "@tabler/icons-svelte/IconBug.svelte";
     import IconAdjustmentsStar from "@tabler/icons-svelte/IconAdjustmentsStar.svelte";
 
-    $: versionText = $version
-        ? `v${$version.version}-${$version.commit.slice(0, 8)}`
-        : "\xa0";
 </script>
 
 <PageNav
     pageName="settings"
-    pageSubtitle={versionText}
     homeNavPath="/settings"
     homeTitle={$t("tabs.settings")}
 >

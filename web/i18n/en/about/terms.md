@@ -9,7 +9,7 @@
     sectionId="general"
 />
 
-these terms are applicable only when using the official cobalt instance.
+these terms are applicable only to the PSDev Sistemas instance.
 in other cases, you may need to contact the instance hoster for accurate info.
 </section>
 
@@ -50,10 +50,6 @@ fair use and credits benefit everyone.
     sectionId="abuse"
 />
 
-we have no way of detecting abusive behavior automatically because cobalt is fully anonymous.
-however, you can report such activities to us via email and we'll do our best to comply manually: abuse[at]imput.net
-
-**this email is not intended for user support, you will not get a response if your concern is not related to abuse.**
-
-if you're experiencing issues, you can reach out for support via any preferred method on [the community page](/about/community).
+we have no way of detecting abusive behavior automatically because the service is fully anonymous.
+if you know of abusive activity, contact PSDev Sistemas and we'll do our best to act on it manually.
 </section>

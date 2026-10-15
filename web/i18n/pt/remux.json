@@ -1,0 +1,8 @@
+{
+    "bullet.purpose.title": "Para que serve o remux?",
+    "bullet.purpose.description": "O remux corrige problemas no contêiner do arquivo, como informações de tempo ausentes. Ele aumenta a compatibilidade com programas mais antigos, como o Vegas Pro e o Windows Media Player.",
+    "bullet.explainer.title": "Como funciona?",
+    "bullet.explainer.description": "O remux pega os dados de codec já existentes e os copia para um novo contêiner de mídia. Não há perda de qualidade: a mídia não é recodificada.",
+    "bullet.privacy.title": "Processamento no aparelho",
+    "bullet.privacy.description": "O remux acontece no seu próprio aparelho. Os arquivos nunca saem dele, por isso o processamento é quase instantâneo."
+}

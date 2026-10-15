@@ -65,7 +65,7 @@
         align-items: center;
         padding: var(--small-padding);
         border-radius: 5px;
-        background: var(--icon-color);
+        background: var(--accent);
     }
 
     .subnav-tab .tab-icon :global(svg) {
@@ -75,17 +75,14 @@
         width: 20px;
     }
 
+    /* one accent: idle tiles stay ink-blue neutral, only the selected one is blue */
     .subnav-tab:not(.active) .tab-icon {
-        background: rgba(0, 0, 0, 0.05);
+        background: var(--button);
         box-shadow: var(--button-box-shadow);
     }
 
-    :global([data-theme="dark"]) .subnav-tab:not(.active) .tab-icon {
-        background: rgba(255, 255, 255, 0.1);
-    }
-
     .subnav-tab:not(.active) .tab-icon :global(svg) {
-        stroke: var(--icon-color);
+        stroke: var(--gray);
     }
 
     .subnav-tab-chevron :global(svg) {
@@ -113,8 +110,9 @@
     }
 
     .subnav-tab.active {
-        background: var(--secondary);
-        color: var(--primary);
+        background: var(--accent-soft);
+        color: var(--secondary);
+        box-shadow: 0 0 0 1.5px var(--accent) inset;
         cursor: default;
     }
 

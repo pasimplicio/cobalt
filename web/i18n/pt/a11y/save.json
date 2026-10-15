@@ -1,0 +1,13 @@
+{
+    "link_area": "campo do link",
+    "link_area.turnstile": "campo do link. verificando se você não é um robô.",
+    "clear_input": "limpar campo",
+    "download": "baixar",
+    "download.think": "processando o link...",
+    "download.check": "verificando o download...",
+    "download.done": "download concluído",
+    "download.error": "erro no download",
+
+    "tutorial.shortcut.photos": "adicionar atalho para Fotos",
+    "tutorial.shortcut.files": "adicionar atalho para Arquivos"
+}

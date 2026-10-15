@@ -1,7 +1,6 @@
 <script lang="ts">
     import { t } from "$lib/i18n/translations";
 
-    import Meowbalt from "$components/misc/Meowbalt.svelte";
     import IconFileImport from "@tabler/icons-svelte/IconFileImport.svelte";
     import IconUpload from "@tabler/icons-svelte/IconUpload.svelte";
 
@@ -41,7 +40,7 @@
             let userFiles = fileInput?.files;
             if (userFiles && userFiles.length >= 1) {
                 if (userFiles.length > maxFileNumber) {
-                    return alert("too many files, limit is " + maxFileNumber);
+                    return alert("Arquivos demais. O limite é " + maxFileNumber + ".");
                 }
                 files = userFiles;
                 onImport();
@@ -51,8 +50,6 @@
 </script>
 
 <div class="open-file-container" class:dragged-over={draggedOver}>
-    <Meowbalt emotion="question" />
-
     <button class="button open-file-button" onclick={openFile}>
         <div class="dashed-stroke">
             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -147,21 +144,6 @@
 
     .open-file-button:focus-visible {
         outline: none;
-    }
-
-    .open-file-container :global(.meowbalt) {
-        z-index: 2;
-        clip-path: inset(0px 0px 16px 0px);
-        margin-bottom: -16px;
-        transition:
-            clip-path 0.2s,
-            margin-bottom 0.2s,
-            opacity 0.15s;
-    }
-
-    .dragged-over :global(.meowbalt) {
-        clip-path: inset(0px 0px 9px 0px);
-        margin-bottom: -9px;
     }
 
     .open-file-icon {

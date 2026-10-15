@@ -92,13 +92,9 @@
         margin: calc(var(--padding) / 2);
     }
 
-    .small-dialog.meowbalt-visible {
-        padding-top: calc(var(--padding) * 4);
-    }
-
     .meowbalt-container {
-        position: absolute;
-        top: -120px;
+        display: flex;
+        justify-content: center;
     }
 
     .popup-title {

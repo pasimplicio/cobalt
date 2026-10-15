@@ -1,0 +1,22 @@
+{
+    "no_final_file": "nenhum arquivo final foi gerado",
+    "worker_didnt_start": "não foi possível iniciar o processamento",
+
+    "generic_error": "o processamento falhou, veja o console para detalhes",
+
+    "fetch.crashed": "o download falhou, veja o console para detalhes",
+    "fetch.bad_response": "não foi possível acessar o túnel do arquivo",
+    "fetch.no_file_reader": "não foi possível gravar o arquivo no cache",
+    "fetch.empty_tunnel": "o túnel do arquivo está vazio, tente de novo em alguns minutos",
+    "fetch.corrupted_file": "o arquivo não foi baixado por completo, tente de novo",
+    "fetch.network_error": "o download foi interrompido por um problema de rede",
+
+    "ffmpeg.probe_failed": "não foi possível analisar o arquivo, ele pode não ser compatível ou estar corrompido",
+    "ffmpeg.out_of_memory": "memória insuficiente, não dá para continuar",
+    "ffmpeg.no_input_format": "o formato do arquivo não é compatível",
+    "ffmpeg.no_input_type": "o tipo do arquivo não é compatível",
+    "ffmpeg.crashed": "o ffmpeg falhou, veja o console para detalhes",
+    "ffmpeg.no_render": "o ffmpeg não gerou nada, algo muito estranho aconteceu",
+    "ffmpeg.no_args": "o ffmpeg não recebeu os parâmetros necessários",
+    "ffmpeg.no_audio_channel": "este vídeo não tem faixa de áudio, não há o que extrair"
+}

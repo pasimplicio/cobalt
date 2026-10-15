@@ -1,0 +1,22 @@
+{
+    "reset_settings.title": "Redefinir todos os ajustes?",
+    "reset_settings.body": "Tem certeza de que quer redefinir todos os ajustes? A ação é imediata e não pode ser desfeita.",
+
+    "picker.title": "Escolha o que salvar",
+    "picker.description.desktop": "Clique em um item para salvá-lo. Imagens também podem ser salvas pelo menu do botão direito.",
+    "picker.description.phone": "Toque em um item para salvá-lo. Imagens também podem ser salvas com um toque longo.",
+    "picker.description.ios": "Toque em um item para salvá-lo com um atalho. Imagens também podem ser salvas com um toque longo.",
+
+    "saving.title": "Escolha como salvar",
+    "saving.blocked": "Tentei abrir o arquivo em uma nova aba, mas o navegador bloqueou. Permita pop-ups para este site para que isso não aconteça de novo.",
+    "saving.timeout": "Tentei salvar o arquivo automaticamente, mas o navegador impediu. Escolha manualmente como prefere salvar.",
+
+    "safety.title": "Aviso importante de segurança",
+
+    "import.body": "Importar arquivos desconhecidos ou corrompidos pode alterar ou quebrar o funcionamento do site. Importe apenas arquivos que você mesmo exportou e não modificou. Se alguém pediu para você importar este arquivo, não importe.\n\nNão nos responsabilizamos por danos causados pela importação de arquivos de ajustes desconhecidos.",
+
+    "safety.custom_instance.body": "Instâncias personalizadas podem trazer riscos à sua privacidade e segurança.\n\nInstâncias mal-intencionadas podem:\n1. redirecionar você para outro site e tentar aplicar golpes.\n2. registrar todos os seus pedidos, guardar para sempre e usar para rastrear você.\n3. entregar arquivos maliciosos (como malware).\n4. obrigar você a ver anúncios ou cobrar pelos downloads.\n\nA partir daqui, não conseguimos proteger você. Escolha bem as instâncias e confie no seu instinto. Se algo parecer estranho, volte a esta página, remova a instância personalizada e nos avise.",
+
+    "clear_cache.title": "Limpar todo o cache?",
+    "clear_cache.body": "Todos os arquivos da fila de processamento serão removidos e os recursos locais vão demorar mais para carregar. A ação é imediata e não pode ser desfeita."
+}

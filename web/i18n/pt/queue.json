@@ -1,0 +1,16 @@
+{
+    "title": "Fila de processamento",
+    "stub": "Nada por aqui ainda.\nBaixe alguma coisa para começar!",
+
+    "state.waiting": "na fila",
+    "state.retrying": "tentando de novo",
+    "state.starting": "iniciando",
+
+    "state.starting.fetch": "iniciando download",
+    "state.starting.remux": "iniciando remux",
+    "state.starting.encode": "iniciando conversão",
+
+    "state.running.remux": "fazendo remux",
+    "state.running.fetch": "baixando",
+    "state.running.encode": "convertendo"
+}

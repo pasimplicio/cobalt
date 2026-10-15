@@ -1,0 +1,161 @@
+{
+    "page.appearance": "Aparência",
+    "page.privacy": "Privacidade",
+    "page.video": "Vídeo",
+    "page.audio": "Áudio",
+    "page.metadata": "Metadados",
+    "page.advanced": "Avançado",
+    "page.debug": "Informações técnicas",
+    "page.instances": "Instâncias",
+    "page.local": "Processamento local",
+    "page.accessibility": "Acessibilidade",
+
+    "theme": "Tema",
+    "theme.auto": "Automático",
+    "theme.light": "Claro",
+    "theme.dark": "Escuro",
+    "theme.description": "O tema automático alterna entre claro e escuro de acordo com o modo de exibição do seu aparelho.",
+
+    "video.quality": "Qualidade do vídeo",
+    "video.quality.max": "8K+",
+    "video.quality.2160": "4K",
+    "video.quality.1440": "1440p",
+    "video.quality.1080": "1080p",
+    "video.quality.720": "720p",
+    "video.quality.480": "480p",
+    "video.quality.360": "360p",
+    "video.quality.240": "240p",
+    "video.quality.144": "144p",
+    "video.quality.description": "Se a qualidade escolhida não estiver disponível, a melhor opção seguinte é usada.",
+
+    "video.youtube.codec": "Codec de vídeo preferido no YouTube",
+    "video.youtube.codec.description": "h264: melhor compatibilidade, qualidade média. Máximo de 1080p.\nav1: melhor qualidade e eficiência. Suporta 8K e HDR.\nvp9: mesma qualidade do av1, mas o arquivo fica cerca de 2x maior. Suporta 4K e HDR.\n\nav1 e vp9 não são amplamente suportados, pode ser preciso usar outro programa para reproduzir ou editar. Se o codec preferido não estiver disponível, o melhor seguinte é usado.",
+
+    "video.youtube.container": "Contêiner do arquivo do YouTube",
+    "video.youtube.container.description": "Com \"automático\", o melhor contêiner é escolhido de acordo com o codec: mp4 para h264; webm para vp9/av1.",
+
+    "video.youtube.hls": "Formatos HLS do YouTube",
+    "video.youtube.hls.title": "Preferir HLS para vídeo e áudio",
+    "video.youtube.hls.description": "Apenas os codecs h264 e vp9 estão disponíveis neste modo. O áudio original é aac e é recodificado para compatibilidade, então a qualidade pode ficar um pouco abaixo da versão sem HLS.\n\nEsta opção é experimental e pode mudar ou ser removida no futuro.",
+
+    "video.twitter.gif": "Twitter/X",
+    "video.twitter.gif.title": "Converter vídeos em loop para GIF",
+    "video.twitter.gif.description": "A conversão para GIF é ineficiente: o arquivo pode ficar muito grande e com baixa qualidade.",
+
+    "video.h265": "Codec de vídeo de alta eficiência",
+    "video.h265.title": "Permitir h265 nos vídeos",
+    "video.h265.description": "Permite baixar vídeos de plataformas como o TikTok em qualidade maior, em troca de menos compatibilidade.",
+
+    "audio.format": "Formato do áudio",
+    "audio.format.best": "Melhor",
+    "audio.format.mp3": "mp3",
+    "audio.format.ogg": "ogg",
+    "audio.format.wav": "wav",
+    "audio.format.opus": "opus",
+    "audio.format.description": "Todos os formatos, exceto \"melhor\", são convertidos a partir do original e perdem um pouco de qualidade. Com \"melhor\", o áudio é mantido no formato original sempre que possível.",
+
+    "audio.bitrate": "Taxa de bits do áudio",
+    "audio.bitrate.kbps": "kb/s",
+    "audio.bitrate.description": "A taxa de bits só é aplicada ao converter o áudio para um formato com perda. Não é possível melhorar a qualidade do áudio original, então escolher mais de 128 kb/s pode aumentar o arquivo sem diferença audível. A qualidade percebida varia conforme o formato.",
+
+    "audio.youtube.dub": "Faixa de áudio do YouTube",
+    "audio.youtube.dub.title": "Idioma de dublagem preferido",
+    "audio.youtube.dub.description": "Uma faixa dublada no idioma escolhido será usada se estiver disponível. Se não estiver, o áudio original é usado.",
+    "youtube.dub.original": "Original",
+
+    "subtitles": "Legendas",
+    "subtitles.title": "Idioma de legenda preferido",
+    "subtitles.description": "As legendas no idioma escolhido serão adicionadas ao arquivo baixado, se estiverem disponíveis.\n\nAlguns serviços não permitem escolher o idioma. Nesse caso, a única faixa de legenda disponível é adicionada se você tiver escolhido algum idioma.",
+    "subtitles.none": "Nenhuma",
+
+    "audio.youtube.better_audio": "Qualidade do áudio do YouTube",
+    "audio.youtube.better_audio.title": "Preferir qualidade maior",
+    "audio.youtube.better_audio.description": "No modo áudio, tentaremos escolher o áudio de maior qualidade. Isso depende da resposta do YouTube, do tráfego atual e do estado do servidor. Instâncias personalizadas podem não oferecer esta opção.",
+
+    "audio.tiktok.original": "TikTok",
+    "audio.tiktok.original.title": "Baixar o som original",
+    "audio.tiktok.original.description": "Baixa o som do vídeo sem nenhuma alteração feita pelo autor da publicação.",
+
+    "metadata.filename": "Estilo do nome do arquivo",
+    "metadata.filename.classic": "Clássico",
+    "metadata.filename.basic": "Básico",
+    "metadata.filename.pretty": "Bonito",
+    "metadata.filename.nerdy": "Detalhado",
+    "metadata.filename.description": "O estilo do nome só é aplicado a arquivos que passam pelo túnel do servidor. Alguns serviços só aceitam o estilo clássico.",
+
+    "metadata.filename.preview.video": "Título do vídeo - Autor do vídeo",
+    "metadata.filename.preview.audio": "Título do áudio - Autor do áudio",
+    "filename.preview_desc.video": "prévia do arquivo de vídeo",
+    "filename.preview_desc.audio": "prévia do arquivo de áudio",
+
+    "metadata.file": "Metadados do arquivo",
+    "metadata.disable.title": "Desativar metadados do arquivo",
+    "metadata.disable.description": "Título, artista e outras informações não serão adicionados ao arquivo.",
+
+    "saving.title": "Forma de salvar",
+    "saving.ask": "Perguntar",
+    "saving.download": "Baixar",
+    "saving.share": "Compartilhar",
+    "saving.copy": "Copiar",
+    "saving.description": "Forma preferida de salvar o arquivo ou o link. Se ela não estiver disponível ou algo der errado, vamos perguntar o que fazer.",
+
+    "accessibility.visual": "Visual",
+    "accessibility.haptics": "Vibração",
+    "accessibility.behavior": "Comportamento",
+
+    "accessibility.transparency.title": "Reduzir transparência",
+    "accessibility.transparency.description": "A transparência das superfícies será reduzida e os efeitos de desfoque serão desativados. Também pode melhorar o desempenho em aparelhos mais simples.",
+    "accessibility.motion.title": "Reduzir movimento",
+    "accessibility.motion.description": "Animações e transições serão desativadas sempre que possível.",
+    "accessibility.haptics.title": "Desativar vibração",
+    "accessibility.haptics.description": "Todos os efeitos de vibração serão desativados.",
+    "accessibility.auto_queue.title": "Não abrir a fila automaticamente",
+    "accessibility.auto_queue.description": "A fila de processamento não será aberta sozinha quando um item novo entrar nela. O progresso continua visível e você pode abri-la manualmente.",
+
+    "language": "Idioma",
+    "language.auto.title": "Seleção automática",
+    "language.auto.description": "Usa o idioma padrão do navegador, se houver tradução. Se não houver, usa o português.",
+    "language.preferred.title": "Idioma preferido",
+    "language.preferred.description": "Este idioma é usado quando a seleção automática está desligada. Textos sem tradução aparecem em português.\n\nAlguns idiomas usam traduções feitas pela comunidade e podem estar incompletos ou imprecisos.",
+
+    "privacy.analytics": "Estatísticas anônimas de acesso",
+    "privacy.analytics.title": "Não participar das estatísticas",
+    "privacy.analytics.description": "As estatísticas anônimas servem para saber o número aproximado de usuários ativos. Nenhuma informação que identifique você é guardada. Todos os dados são anonimizados e agregados.\n\nUsamos uma instância própria do Plausible, que não usa cookies e segue a LGPD, o GDPR, o CCPA e o PECR.",
+    "privacy.analytics.learnmore": "Saiba mais sobre o compromisso do Plausible com a privacidade.",
+
+    "privacy.tunnel": "Túnel",
+    "privacy.tunnel.title": "Sempre usar túnel nos arquivos",
+    "privacy.tunnel.description": "Esconde o seu endereço IP e as informações do navegador, além de contornar restrições da rede local. Com esta opção, os arquivos também recebem nomes legíveis, que de outra forma seriam aleatórios.",
+
+    "advanced.debug": "Depuração",
+    "advanced.debug.title": "Ativar recursos técnicos",
+    "advanced.debug.description": "Dá acesso rápido a informações do app úteis para depuração. Ativar esta opção não muda em nada o funcionamento do site.",
+
+    "processing.community": "Instâncias da comunidade",
+    "processing.enable_custom.title": "Usar um servidor de processamento personalizado",
+    "processing.enable_custom.description": "Se você escolher, será usada uma instância de processamento personalizada. Apesar das medidas de segurança, não nos responsabilizamos por danos causados por instâncias da comunidade, pois não temos controle sobre elas.\n\nEscolha bem as instâncias e use apenas as hospedadas por pessoas em quem você confia.",
+
+    "processing.access_key": "Chave de acesso da instância",
+    "processing.access_key.title": "Usar uma chave de acesso",
+    "processing.access_key.description": "Esta chave será usada nos pedidos ao servidor de processamento no lugar de outros métodos de autenticação. Confirme que a instância aceita chaves de API!",
+
+    "processing.custom_instance.input.alt_text": "domínio da instância personalizada",
+    "processing.access_key.input.alt_text": "chave de acesso u-u-i-d",
+
+    "advanced.settings_data": "Dados dos ajustes",
+    "advanced.local_storage": "Armazenamento local",
+
+    "local.saving": "Processamento local de mídia",
+    "local.saving.description": "Ao baixar mídia, o remux e a conversão serão feitos no seu aparelho em vez da nuvem. O progresso detalhado aparece na fila de processamento.\n\nDesativado: o processamento local não é usado. Servidores de processamento podem exigir o processamento local, então esta opção pode não ter efeito.\nPreferido: mídias que precisam de processamento extra passam pela fila de processamento, e o restante é baixado pelo gerenciador de downloads do navegador.\nForçado: toda mídia sempre passa pelo túnel e é baixada pela fila de processamento.\n\nOs recursos exclusivos do aparelho não são afetados por este ajuste: eles sempre rodam localmente.",
+    "local.saving.disabled": "Desativado",
+    "local.saving.preferred": "Preferido",
+    "local.saving.forced": "Forçado",
+
+    "local.webcodecs": "WebCodecs",
+    "local.webcodecs.title": "Usar WebCodecs no processamento local",
+    "local.webcodecs.description": "Ao decodificar ou codificar arquivos, tentaremos usar o WebCodecs. Esse recurso permite processar a mídia com aceleração pela GPU, deixando a decodificação e a codificação muito mais rápidas.\n\nA disponibilidade e a estabilidade dependem do seu aparelho e do navegador. Algumas coisas podem falhar ou não funcionar direito.",
+
+    "tabs": "Navegação",
+    "tabs.hide_remux": "Ocultar a aba Remux",
+    "tabs.hide_remux.description": "Se você não usa a ferramenta de remux, pode ocultá-la da barra de navegação."
+}

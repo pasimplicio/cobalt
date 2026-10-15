@@ -1,0 +1,27 @@
+{
+    "paste": "Colar",
+    "paste.long": "Colar e baixar",
+    "auto": "Auto",
+    "audio": "Áudio",
+    "mute": "Sem som",
+    "input.placeholder": "Cole o link aqui",
+    "terms.note.agreement": "Ao continuar, você concorda com os",
+    "terms.note.link": "termos e regras de uso",
+    "services.title": "Serviços compatíveis",
+    "services.title_show": "Ver serviços compatíveis",
+    "services.title_hide": "Ocultar serviços compatíveis",
+    "services.disclaimer": "A compatibilidade com um serviço não significa afiliação, endosso ou qualquer outro tipo de apoio além da compatibilidade técnica.",
+
+    "tutorial.title": "Como salvar no iOS?",
+    "tutorial.intro": "Para salvar mídia com facilidade no iOS, use um atalho da Siri a partir do menu de compartilhamento.",
+    "tutorial.step.1": "Adicione os atalhos da Siri:",
+    "tutorial.step.2": "Toque em \"Compartilhar\" na janela de salvamento.",
+    "tutorial.step.3": "Escolha o atalho correspondente no menu de compartilhamento.",
+    "tutorial.outro": "Os atalhos só funcionam a partir do app instalado. Compartilhar links de outros apps não funciona.",
+    "tutorial.shortcut.photos": "para Fotos",
+    "tutorial.shortcut.files": "para Arquivos",
+
+    "label.community_instance": "instância da comunidade",
+
+    "tooltip.captcha": "O Cloudflare Turnstile está verificando se você não é um robô. Aguarde um instante!"
+}

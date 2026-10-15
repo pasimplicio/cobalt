@@ -1,0 +1,63 @@
+{
+    "auth.jwt.missing": "Não foi possível autenticar no servidor de processamento porque o token de acesso está faltando. Tente de novo em alguns segundos ou recarregue a página!",
+    "auth.jwt.invalid": "Não foi possível autenticar no servidor de processamento porque o token de acesso é inválido. Tente de novo em alguns segundos ou recarregue a página!",
+    "auth.turnstile.missing": "Não foi possível autenticar no servidor de processamento porque a resposta do captcha está faltando. Tente de novo em alguns segundos ou recarregue a página!",
+    "auth.turnstile.invalid": "Não foi possível autenticar no servidor de processamento porque a resposta do captcha é inválida. Tente de novo em alguns segundos ou recarregue a página!",
+
+    "auth.key.missing": "Este servidor de processamento exige uma chave de acesso, mas nenhuma foi informada. Adicione a chave nos ajustes de instâncias!",
+    "auth.key.not_api_key": "Este servidor de processamento exige uma chave de acesso, mas nenhuma foi informada. Adicione a chave nos ajustes de instâncias!",
+
+    "auth.key.invalid": "A chave de acesso é inválida. Remova-a nos ajustes de instâncias e use uma chave correta!",
+    "auth.key.not_found": "A chave de acesso informada não foi encontrada. Tem certeza de que esta instância conhece a sua chave?",
+    "auth.key.invalid_ip": "Não foi possível ler o seu endereço IP. Algo deu muito errado. Relate este problema!",
+    "auth.key.ip_not_allowed": "O seu endereço IP não tem permissão para usar esta chave de acesso. Use outra instância ou outra rede!",
+    "auth.key.ua_not_allowed": "O seu navegador não tem permissão para usar esta chave de acesso. Use outro aplicativo ou aparelho!",
+
+    "unreachable": "Não foi possível conectar ao servidor de processamento. Verifique sua conexão com a internet e tente de novo!",
+    "timed_out": "O servidor de processamento demorou demais para responder. Ele pode estar sobrecarregado agora. Tente de novo em alguns segundos!",
+    "rate_exceeded": "Você está fazendo pedidos demais. Tente de novo em {{ limit }} segundos.",
+    "capacity": "O servidor está no limite e não consegue processar o seu pedido agora. Tente de novo em alguns segundos!",
+
+    "generic": "Algo deu errado e não consegui baixar nada. Tente de novo em alguns segundos. Se o problema continuar, avise a gente!",
+    "unknown_response": "Não consegui ler a resposta do servidor de processamento. Provavelmente o site está desatualizado. Recarregue a página e tente de novo!",
+    "invalid_body": "Não consegui enviar o pedido ao servidor de processamento. Provavelmente o site está desatualizado. Recarregue a página e tente de novo!",
+
+    "service.unsupported": "Este serviço ainda não é compatível. Você colou o link certo?",
+    "service.disabled": "Este serviço é compatível, mas está desativado neste servidor de processamento. Tente um link de outro serviço!",
+    "service.audio_not_supported": "Este serviço não permite extrair só o áudio. Tente um link de outro serviço!",
+
+    "link.invalid": "O link é inválido ou o serviço ainda não é compatível. Você colou o link certo?",
+    "link.unsupported": "O {{ service }} é compatível, mas não reconheci este link. Você colou o link certo?",
+
+    "fetch.fail": "Algo deu errado ao buscar as informações no {{ service }} e não consegui baixar nada. Se o problema continuar, avise a gente!",
+    "fetch.critical": "O módulo do {{ service }} retornou um erro que não reconheço. Tente de novo em alguns segundos. Se o problema continuar, avise a gente!",
+    "fetch.critical.core": "Um dos módulos principais retornou um erro que não reconheço. Tente de novo em alguns segundos. Se o problema continuar, avise a gente!",
+    "fetch.empty": "Não encontrei nenhuma mídia para baixar. Tem certeza de que colou o link certo?",
+    "fetch.rate": "O {{ service }} limitou os pedidos do servidor de processamento. Tente de novo em alguns segundos!",
+    "fetch.short_link": "Não consegui obter informações do link curto. Tem certeza de que ele funciona? Se funcionar e o erro continuar, avise a gente!",
+
+    "content.too_long": "A mídia é longa demais. O limite de duração neste servidor é de {{ limit }} minutos. Tente algo mais curto!",
+
+    "content.video.unavailable": "Não consigo acessar este vídeo. Ele pode estar restrito pelo próprio {{ service }}. Tente outro link!",
+    "content.video.live": "Este vídeo está ao vivo agora, então ainda não dá para baixar. Espere a transmissão terminar e tente de novo!",
+    "content.video.private": "Este vídeo é privado, então não consigo acessá-lo. Mude a visibilidade dele ou tente outro!",
+    "content.video.age": "Este vídeo tem restrição de idade, então não consigo acessá-lo de forma anônima. Tente de novo ou use outro link!",
+    "content.video.region": "Este vídeo está bloqueado por região e o servidor de processamento fica em outro lugar. Tente outro link!",
+
+    "content.region": "Este conteúdo está bloqueado por região e o servidor de processamento fica em outro lugar. Tente outro link!",
+    "content.paid": "Este conteúdo é pago. Não é possível baixar conteúdo pago. Tente outro link!",
+
+    "content.post.unavailable": "Não encontrei nada sobre esta publicação. Ela pode ter visibilidade limitada ou não existir. Confira se o link funciona e tente de novo em alguns segundos!",
+    "content.post.private": "Não consegui acessar esta publicação porque ela é de uma conta privada. Tente outro link!",
+    "content.post.age": "Esta publicação tem restrição de idade, então não consigo acessá-la de forma anônima. Tente de novo ou use outro link!",
+
+    "youtube.no_matching_format": "O YouTube não ofereceu nenhum formato aceitável. Eles podem não ser compatíveis ou ainda estar sendo processados pelo YouTube. Tente de novo mais tarde. Se o problema continuar, avise a gente!",
+    "youtube.decipher": "O YouTube mudou o algoritmo de proteção e não consegui extrair as informações do vídeo. Tente de novo em alguns segundos. Se o problema continuar, avise a gente!",
+    "youtube.login": "Não consegui baixar este vídeo porque o YouTube pediu ao servidor de processamento para provar que não é um robô. Tente de novo em alguns segundos. Se ainda não funcionar, avise a gente!",
+    "youtube.token_expired": "Não consegui baixar este vídeo porque o token do YouTube expirou e não foi renovado. Tente de novo em alguns segundos. Se ainda não funcionar, avise a gente!",
+    "youtube.no_hls_streams": "Não encontrei nenhum stream HLS compatível para este vídeo. Tente baixar sem HLS!",
+    "youtube.api_error": "O YouTube mudou algo na API e não consegui obter informações deste vídeo. Tente de novo em alguns segundos. Se o problema continuar, avise a gente!",
+    "youtube.disabled_main_instance": "Os downloads do YouTube estão desativados na instância principal por causa de restrições do próprio YouTube e do custo de manutenção.\n\nPedimos desculpas pelo transtorno. Para baixar do YouTube, hospede a sua própria instância da API.",
+    "youtube.drm": "Este vídeo do YouTube é protegido por DRM Widevine, então não consigo baixá-lo. Tente outro link!",
+    "youtube.no_session_tokens": "Não consegui obter os tokens de sessão do YouTube. Isso pode ser uma restrição do próprio YouTube. Tente de novo em alguns segundos. Se o problema continuar, avise a gente!"
+}

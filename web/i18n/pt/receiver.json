@@ -1,0 +1,7 @@
+{
+    "title": "Arraste ou selecione um arquivo",
+    "title.multiple": "Arraste ou selecione arquivos",
+    "title.drop": "Solte o arquivo aqui!",
+    "title.drop.multiple": "Solte os arquivos aqui!",
+    "accept": "Formatos aceitos: {{ formats }}."
+}

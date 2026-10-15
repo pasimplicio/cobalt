@@ -1,0 +1,4 @@
+{
+    "button.next": "ver notas mais antigas ({{ value }})",
+    "button.previous": "ver notas mais recentes ({{ value }})"
+}

@@ -1,0 +1,5 @@
+{
+    "status.default": "fila de processamento",
+    "status.completed": "fila de processamento. todas as tarefas foram concluídas.",
+    "status.ongoing": "fila de processamento. há tarefas em andamento."
+}

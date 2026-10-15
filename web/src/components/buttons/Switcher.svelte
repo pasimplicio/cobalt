@@ -69,11 +69,12 @@
     }
 
     .switcher :global(.button.active:hover) {
-        background: var(--secondary);
+        background: var(--accent);
     }
 
     .switcher.big :global(.button) {
         width: 100%;
+        padding-inline: 9px;
         /* [base button height] - ([switcher padding] * [padding factor to accommodate for]) */
         height: calc(40px - var(--switcher-padding) * 2);
         border-radius: calc(var(--border-radius) - var(--switcher-padding));

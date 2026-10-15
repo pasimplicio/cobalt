@@ -14,7 +14,7 @@ export const load: PageLoad = async ({ params }) => {
         file => file.endsWith(`${locale}/about/${params.page}.md`)
     );
 
-    const componentPath = getPage(get(locale)) || getPage(defaultLocale);
+    const componentPath = getPage(get(locale)) || getPage("en") || getPage(defaultLocale);
     if (componentPath) {
         const componentImport = pages[componentPath] as DefaultImport<Component>;
         return { component: (await componentImport()).default }

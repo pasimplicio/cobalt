@@ -85,8 +85,9 @@
     }
 
     .sidebar-tab.active {
-        color: var(--sidebar-bg);
-        background: var(--sidebar-highlight);
+        color: var(--on-accent);
+        background: var(--accent);
+        box-shadow: 0 6px 18px -8px var(--accent-glow);
         opacity: 1;
         transform: none;
         transition: none;
@@ -130,12 +131,12 @@
 
     @media (hover: hover) {
         .sidebar-tab:hover:not(.active) {
-            background-color: var(--button-hover-transparent);
+            background-color: var(--sidebar-hover);
         }
 
         .sidebar-tab:active:not(.active),
         .sidebar-tab:focus:hover:not(.active) {
-            background-color: var(--button-press-transparent);
+            background-color: var(--sidebar-press);
         }
 
         .sidebar-tab:hover:not(.active) {

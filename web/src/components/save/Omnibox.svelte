@@ -28,10 +28,10 @@
     import CaptchaTooltip from "$components/save/CaptchaTooltip.svelte";
     import SettingsButton from "$components/buttons/SettingsButton.svelte";
 
-    import IconMute from "$components/icons/Mute.svelte";
-    import IconMusic from "$components/icons/Music.svelte";
-    import IconSparkles from "$components/icons/Sparkles.svelte";
-    import IconClipboard from "$components/icons/Clipboard.svelte";
+    import IconMusic from "@tabler/icons-svelte/IconMusic.svelte";
+    import IconSparkles from "@tabler/icons-svelte/IconSparkles.svelte";
+    import IconClipboard from "@tabler/icons-svelte/IconClipboard.svelte";
+    import IconMute from "@tabler/icons-svelte/IconVolumeOff.svelte";
 
     let linkInput: Optional<HTMLInputElement>;
 
@@ -239,14 +239,17 @@
         flex-direction: column;
         max-width: 640px;
         width: 100%;
-        gap: 6px;
+        gap: 10px;
         position: relative;
     }
 
     #input-container {
-        --input-padding: 10px;
+        --input-padding: 12px;
         display: flex;
-        box-shadow: 0 0 0 1.5px var(--input-border) inset;
+        background: var(--popup-bg);
+        box-shadow:
+            0 0 0 1.5px var(--input-border) inset,
+            0 1px 2px rgba(11, 21, 48, 0.04);
         /* webkit can't render the 1.5px box shadow properly,
            so we duplicate the border as outline to fix it visually */
         outline: 1.5px solid var(--input-border);
@@ -254,8 +257,15 @@
         border-radius: var(--border-radius);
         align-items: center;
         gap: var(--input-padding);
-        font-size: 14px;
+        font-size: 15px;
         flex: 1;
+        transition:
+            box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+            outline-color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    :global([data-reduce-motion="true"]) #input-container {
+        transition: none;
     }
 
     #input-container:not(.clear-visible) :global(#clear-button) {
@@ -276,25 +286,26 @@
     }
 
     #input-container.downloadable {
-        padding-right: 0;
+        padding-right: 5px;
     }
 
     #input-container.downloadable:dir(rtl) {
-        padding-left: 0;
+        padding-right: unset;
+        padding-left: 5px;
     }
 
+    /* signature: the box lights up like the glowing S in the logo */
     #input-container.focused {
-        box-shadow: none;
-        outline: var(--secondary) 2px solid;
+        outline: var(--accent) 2px solid;
         outline-offset: -1px;
+        box-shadow:
+            0 0 0 4px var(--accent-soft),
+            0 12px 32px -14px var(--accent-glow);
     }
 
-    #input-container.focused :global(#input-icons svg) {
-        stroke: var(--secondary);
-    }
-
+    #input-container.focused :global(#input-icons svg),
     #input-container.downloadable :global(#input-icons svg) {
-        stroke: var(--secondary);
+        stroke: var(--accent);
     }
 
     #link-area {
@@ -302,8 +313,8 @@
         width: 100%;
         margin: 0;
         padding: var(--input-padding) 0;
-        padding-left: calc(var(--input-padding) + 28px);
-        height: 18px;
+        padding-left: calc(var(--input-padding) + 30px);
+        height: 22px;
 
         align-items: center;
 
@@ -326,7 +337,7 @@
 
     :global([dir="rtl"]) #link-area {
         padding-left: unset;
-        padding-right: calc(var(--input-padding) + 28px);
+        padding-right: calc(var(--input-padding) + 30px);
     }
 
     #link-area::placeholder {
@@ -347,6 +358,12 @@
 
     #action-container {
         justify-content: space-between;
+    }
+
+    #action-container :global(svg) {
+        width: 18px;
+        height: 18px;
+        stroke-width: 1.8px;
     }
 
     #paste-mobile-text {

@@ -2,9 +2,8 @@
     import "../app.css";
     import "../fonts/noto-mono-cobalt.css";
 
+    import "@fontsource-variable/sora";
     import "@fontsource/ibm-plex-mono/400.css";
-    import "@fontsource/ibm-plex-mono/400-italic.css";
-    import "@fontsource/ibm-plex-mono/500.css";
 
     import { onMount } from "svelte";
     import { page } from "$app/stores";
@@ -19,14 +18,13 @@
 
     import { t } from "$lib/i18n/translations";
 
-    import { device, app } from "$lib/device";
+    import { device } from "$lib/device";
     import { getServerInfo } from "$lib/api/server-info";
     import currentTheme, { statusBarColors } from "$lib/state/theme";
     import { turnstileCreated, turnstileEnabled } from "$lib/state/turnstile";
 
     import Sidebar from "$components/sidebar/Sidebar.svelte";
     import Turnstile from "$components/misc/Turnstile.svelte";
-    import NotchSticker from "$components/misc/NotchSticker.svelte";
     import DialogHolder from "$components/dialog/DialogHolder.svelte";
     import ProcessingQueue from "$components/queue/ProcessingQueue.svelte";
     import UpdateNotification from "$components/misc/UpdateNotification.svelte";
@@ -108,9 +106,6 @@
         data-reduce-motion={reduceMotion}
         data-reduce-transparency={reduceTransparency}
     >
-        {#if device.is.iPhone && app.is.installed}
-            <NotchSticker />
-        {/if}
         <DialogHolder />
         <Sidebar />
         {#if $updated}
@@ -182,12 +177,6 @@
     }
 
     @media screen and (max-width: 535px) {
-        /* dark navbar cuz it looks better on mobile */
-        :global([data-theme="light"]) {
-            --sidebar-bg: #000000;
-            --sidebar-highlight: var(--primary);
-        }
-
         #cobalt {
             display: grid;
             grid-template-columns: unset;
@@ -217,8 +206,7 @@
         height: 0;
         position: absolute;
         z-index: -10;
-        content: url(/meowbalt/smile.png) url(/meowbalt/error.png)
-            url(/meowbalt/question.png) url(/meowbalt/think.png);
+        content: url(/brand/logo.png) url(/brand/logo-reverse.png);
 
         font-family: "Noto Sans Mono";
         font-size: 0;

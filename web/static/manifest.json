@@ -1,6 +1,6 @@
 {
-    "name": "cobalt",
-    "short_name": "cobalt",
+    "name": "PSDev Sistemas",
+    "short_name": "PSDev",
     "start_url": "/",
     "icons": [
         {
@@ -71,7 +71,7 @@
             "url": "u"
         }
     },
-    "theme_color": "#000000",
-    "background_color": "#000000",
+    "theme_color": "#0a1633",
+    "background_color": "#070d1b",
     "display": "standalone"
 }

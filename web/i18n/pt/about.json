@@ -1,0 +1,35 @@
+{
+    "page.general": "O que é?",
+
+    "page.community": "Comunidade e suporte",
+
+    "page.privacy": "Política de privacidade",
+    "page.terms": "Termos de uso",
+    "page.credits": "Créditos e licenças",
+
+    "heading.general": "Termos gerais",
+    "heading.licenses": "Licenças",
+    "heading.summary": "O jeito mais simples de salvar o que você curte",
+    "heading.privacy_efficiency": "Privacidade e eficiência",
+    "heading.community": "Código aberto",
+    "heading.local": "Processamento local",
+    "heading.saving": "Salvamento",
+    "heading.encryption": "Criptografia",
+    "heading.plausible": "Estatísticas anônimas de acesso",
+    "heading.cloudflare": "Privacidade e segurança na web",
+    "heading.responsibility": "Responsabilidades do usuário",
+    "heading.abuse": "Denúncia de abuso",
+    "heading.motivation": "Motivação",
+    "heading.testers": "Testadores beta",
+    "heading.partners": "Parceiros",
+
+    "support.github": "Veja o código-fonte do cobalt, contribua ou relate problemas",
+    "support.discord": "Converse com a comunidade e os desenvolvedores do cobalt ou peça ajuda",
+    "support.twitter": "Acompanhe as novidades do cobalt no Twitter",
+    "support.telegram": "Receba as novidades do cobalt por um canal no Telegram",
+    "support.bluesky": "Acompanhe as novidades do cobalt no Bluesky",
+
+    "support.description.issue": "Para relatar um bug ou um problema recorrente, use o GitHub.",
+    "support.description.help": "Para outras dúvidas, use o Discord. Descreva bem o problema em #cobalt-support, senão ninguém conseguirá ajudar.",
+    "support.description.best-effort": "Todo suporte é feito na base da boa vontade e não é garantido. A resposta pode demorar."
+}

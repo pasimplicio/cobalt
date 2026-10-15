@@ -1,59 +1,72 @@
 :root {
-    --primary: #ffffff;
-    --secondary: #000000;
+    /* PSDev Sistemas: navy + electric blue, taken from the logo */
+    --brand-navy: #0a1633;
+    --brand-blue: #006dff;
 
-    --white: #ffffff;
-    --gray: #75757e;
+    --primary: #f5f7fc;
+    --secondary: #0b1530;
 
-    --red: #ed2236;
-    --medium-red: #ce3030;
-    --dark-red: #d61c2e;
-    --green: #30bd1b;
-    --blue: #2f8af9;
-    --magenta: #eb445a;
-    --purple: #5857d4;
-    --orange: #f19a38;
+    --white: #f8faff;
+    --gray: #56627d;
 
-    --focus-ring: solid 2px var(--blue);
+    --accent: #0062e6;
+    --accent-hover: #0057cc;
+    --accent-press: #004db5;
+    --on-accent: #f8faff;
+    --accent-soft: rgba(0, 98, 230, 0.1);
+    --accent-glow: rgba(0, 109, 255, 0.28);
+
+    --red: #e0263b;
+    --medium-red: #c92a3a;
+    --dark-red: #b81f30;
+    --green: #17a34a;
+    --blue: #0062e6;
+    --magenta: #d6336c;
+    --purple: #5b5bd6;
+    --orange: #e8890c;
+
+    --focus-ring: solid 2px var(--accent);
     --focus-ring-offset: -2px;
 
-    --button: #f4f4f4;
-    --button-hover: #ededed;
-    --button-press: #e8e8e8;
-    --button-active-hover: #2a2a2a;
+    --button: #eaeef6;
+    --button-hover: #e1e7f2;
+    --button-press: #d8e0ee;
+    --button-active-hover: var(--accent-hover);
 
-    --button-hover-transparent: rgba(0, 0, 0, 0.06);
-    --button-press-transparent: rgba(0, 0, 0, 0.09);
-    --button-stroke: rgba(0, 0, 0, 0.06);
-    --button-text: #282828;
+    --button-hover-transparent: rgba(11, 21, 48, 0.06);
+    --button-press-transparent: rgba(11, 21, 48, 0.1);
+    --button-stroke: rgba(11, 21, 48, 0.07);
+    --button-text: #17223f;
     --button-box-shadow: 0 0 0 1px var(--button-stroke) inset;
 
-    --button-elevated: #e3e3e3;
-    --button-elevated-hover: #dadada;
-    --button-elevated-press: #d3d3d3;
-    --button-elevated-shimmer: #ededed;
+    --button-elevated: #dde4f0;
+    --button-elevated-hover: #d3dbea;
+    --button-elevated-press: #c9d3e5;
+    --button-elevated-shimmer: #e6ebf4;
 
     --popover-glow: var(--button-stroke);
 
-    --popup-bg: #f1f1f1;
-    --popup-stroke: rgba(0, 0, 0, 0.08);
+    --popup-bg: #fbfcff;
+    --popup-stroke: rgba(11, 21, 48, 0.09);
 
-    --dialog-backdrop: rgba(255, 255, 255, 0.3);
+    --dialog-backdrop: rgba(232, 237, 247, 0.55);
 
-    --sidebar-bg: var(--button);
-    --sidebar-highlight: var(--secondary);
-    --sidebar-stroke: rgba(0, 0, 0, 0.04);
+    --sidebar-bg: var(--brand-navy);
+    --sidebar-highlight: #e9eef8;
+    --sidebar-stroke: rgba(233, 238, 248, 0.08);
+    --sidebar-hover: rgba(233, 238, 248, 0.08);
+    --sidebar-press: rgba(233, 238, 248, 0.14);
 
-    --content-border: rgba(0, 0, 0, 0.03);
+    --content-border: rgba(11, 21, 48, 0.06);
     --content-border-thickness: 1px;
 
-    --input-border: #adadb7;
+    --input-border: #b4bfd4;
 
     --toggle-bg: var(--input-border);
-    --toggle-bg-enabled: var(--secondary);
+    --toggle-bg-enabled: var(--accent);
 
     --padding: 12px;
-    --border-radius: 11px;
+    --border-radius: 12px;
 
     --sidebar-width: 80px;
     --sidebar-font-size: 11px;
@@ -77,11 +90,11 @@
     /* used for fading the tab bar on scroll */
     --sidebar-mobile-gradient: linear-gradient(
         90deg,
-        rgba(0, 0, 0, 0.9) 0%,
-        rgba(0, 0, 0, 0) 5%,
-        rgba(0, 0, 0, 0) 50%,
-        rgba(0, 0, 0, 0) 95%,
-        rgba(0, 0, 0, 0.9) 100%
+        rgba(10, 22, 51, 0.9) 0%,
+        rgba(10, 22, 51, 0) 5%,
+        rgba(10, 22, 51, 0) 50%,
+        rgba(10, 22, 51, 0) 95%,
+        rgba(10, 22, 51, 0.9) 100%
     );
 
     --skeleton-gradient: linear-gradient(
@@ -100,56 +113,56 @@
 }
 
 [data-theme="dark"] {
-    --primary: #000000;
-    --secondary: #e1e1e1;
+    --primary: #070d1b;
+    --secondary: #e6ecf7;
 
-    --gray: #818181;
+    --gray: #8a97b3;
 
-    --blue: #2a7ce1;
-    --green: #37aa42;
+    --accent: #1668f0;
+    --accent-hover: #2272f5;
+    --accent-press: #125cd6;
+    --on-accent: #f8faff;
+    --accent-soft: rgba(31, 123, 255, 0.16);
+    --accent-glow: rgba(31, 123, 255, 0.38);
 
-    --button: #191919;
-    --button-hover: #242424;
-    --button-press: #2a2a2a;
+    --blue: #3a8cff;
+    --green: #2fbf62;
+    --red: #f0475a;
 
-    --button-active-hover: #f9f9f9;
+    --button: #111a2e;
+    --button-hover: #18233b;
+    --button-press: #1e2a45;
 
-    --button-hover-transparent: rgba(225, 225, 225, 0.1);
-    --button-press-transparent: rgba(225, 225, 225, 0.15);
-    --button-stroke: rgba(255, 255, 255, 0.05);
-    --button-text: #e1e1e1;
+    --button-active-hover: var(--accent-hover);
+
+    --button-hover-transparent: rgba(230, 236, 247, 0.08);
+    --button-press-transparent: rgba(230, 236, 247, 0.13);
+    --button-stroke: rgba(230, 236, 247, 0.06);
+    --button-text: #e6ecf7;
     --button-box-shadow: 0 0 0 1px var(--button-stroke) inset;
 
-    --button-elevated: #282828;
-    --button-elevated-hover: #2f2f2f;
-    --button-elevated-press: #343434;
+    --button-elevated: #1b2640;
+    --button-elevated-hover: #222f4d;
+    --button-elevated-press: #283657;
+    --button-elevated-shimmer: #22304e;
 
-    --popover-glow: rgba(135, 135, 135, 0.12);
+    --popover-glow: rgba(120, 150, 210, 0.12);
 
-    --popup-bg: #191919;
-    --popup-stroke: rgba(255, 255, 255, 0.08);
+    --popup-bg: #0f1729;
+    --popup-stroke: rgba(230, 236, 247, 0.08);
 
-    --dialog-backdrop: rgba(0, 0, 0, 0.3);
+    --dialog-backdrop: rgba(4, 8, 18, 0.45);
 
-    --sidebar-bg: #131313;
-    --sidebar-highlight: var(--secondary);
-    --sidebar-stroke: rgba(255, 255, 255, 0.04);
+    --sidebar-bg: var(--brand-navy);
+    --sidebar-highlight: #e6ecf7;
+    --sidebar-stroke: rgba(230, 236, 247, 0.06);
 
-    --content-border: rgba(255, 255, 255, 0.045);
+    --content-border: rgba(230, 236, 247, 0.06);
 
-    --input-border: #383838;
+    --input-border: #2b3856;
 
     --toggle-bg: var(--input-border);
-    --toggle-bg-enabled: #8a8a8a;
-
-    --sidebar-mobile-gradient: linear-gradient(
-        90deg,
-        rgba(19, 19, 19, 0.9) 0%,
-        rgba(19, 19, 19, 0) 5%,
-        rgba(19, 19, 19, 0) 50%,
-        rgba(19, 19, 19, 0) 95%,
-        rgba(19, 19, 19, 0.9) 100%
-    );
+    --toggle-bg-enabled: var(--accent);
 
     --skeleton-gradient: linear-gradient(
         90deg,
@@ -188,7 +201,7 @@ body {
 }
 
 * {
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "Sora Variable", "Segoe UI", system-ui, sans-serif;
     user-select: none;
     scrollbar-width: none;
     -webkit-user-select: none;
@@ -201,8 +214,19 @@ body {
 }
 
 ::selection {
-    color: var(--primary);
-    background: var(--secondary);
+    color: var(--on-accent);
+    background: var(--accent);
+}
+
+input,
+textarea {
+    caret-color: var(--accent);
+}
+
+code,
+pre,
+kbd {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
 }
 
 a {
@@ -256,16 +280,18 @@ a:not(.sidebar-tab):not(.subnav-tab):focus-visible {
 }
 
 .button.active {
-    color: var(--primary);
-    background-color: var(--secondary);
+    color: var(--on-accent);
+    background-color: var(--accent);
 }
 
 /* important is used because active class is toggled by state */
 /* and added to the end of the list, taking priority */
 .button.active:focus-visible,
 a.active:focus-visible {
-    color: var(--white) !important;
-    background-color: var(--blue) !important;
+    color: var(--on-accent) !important;
+    background-color: var(--accent-press) !important;
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
 }
 
 @media (hover: hover) {
@@ -321,18 +347,18 @@ button {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 500;
+    font-weight: 600;
     margin-block: 0;
 }
 
 h1 {
     font-size: 24px;
-    letter-spacing: -1px;
+    letter-spacing: -0.025em;
 }
 
 h2 {
     font-size: 20px;
-    letter-spacing: -1px;
+    letter-spacing: -0.02em;
 }
 
 h3 {
@@ -366,7 +392,7 @@ h6 {
 .long-text *:not(h1, h2, h3, h4, h5, h6) {
     line-height: 1.8;
     font-size: 14.5px;
-    font-family: "IBM Plex Mono", monospace;
+    font-family: "Sora Variable", "Segoe UI", system-ui, sans-serif;
     user-select: text;
     -webkit-user-select: text;
 }
